@@ -39,6 +39,9 @@ int main(){
             curPlayer->reset();
             curPlayer = curPlayer->getLeft(); 
         }
+        if((i+1)%(games/20) == 0 && i != 0){
+            cout << "Simulated " << i+1 << " games." << endl;
+        }
     }
 
     for(int i = 0; i < totalPlayers; i++){
